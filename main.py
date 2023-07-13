@@ -20,8 +20,8 @@ class GCD_Calculator:
           """
     if len(numbers) < 2:
             raise ValueError("At least two numbers are required.")
-    answer = numbers[0]
-    for num in numbers[1:]:
+    answer = numbers[0]#starts at first integer
+    for num in numbers[1:]:# starts at second integer
       answer=self.gcd_two_numbers(answer,num)
     return answer
   
